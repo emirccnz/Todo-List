@@ -10,7 +10,7 @@ function warningEmpty() {
     const warning1 = document.getElementById("warning1");
     const warning4 = document.getElementById("warning4");
     const accessInput = document.getElementById("inputId");
-    if (accessInput.value.trim() == '') {
+    if (!accessInput || accessInput.value.trim() == '') {
         warning2.style.visibility = "hidden"
         warning3.style.visibility = "hidden"
         warning4.style.visibility = "hidden"

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todo List</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="cardId">
+            <div class="upperCard">
+                <h5>Todo List</h5>
+            </div>
+            <div class="adding">
+                <input id="inputId" type="text" placeholder="Enter Todo">
+                <button onclick="warningEmpty()">Add New Todo</button>
+            </div>
+            <div class="warning" id="warningSomething">
+                <p id="warning1" style="position: absolute;">Please don't break empty! </p>
+                <p id="warning2" style="position: absolute;">Your Todo created successfully!</p>
+                <p id="warning3" style="position: absolute;">Your Todo removed successfully!</p>
+                <p id="warning4" style="position: absolute;">Your Todos cleared successfully!</p>
+            </div>
+            <h5>Your Todos</h5>
+
+            <hr>
+            <div class="todos">
+                <ul id="ulElementId">
+
+                </ul>
+                <button id="clearAllButton">Clear All Todos</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

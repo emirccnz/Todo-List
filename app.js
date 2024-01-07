@@ -103,7 +103,8 @@ function changeLocalStorage() {
 }
 
 function pageLoaded() {
-    todoArray = JSON.parse(localStorage.getItem("todos"));
+    localStorageItems = JSON.parse(localStorage.getItem("todos"));
+    todoArray = localStorageItems ? JSON.parse(localStorageItems) : [];
     todoArray.forEach(function (elements) {
         const addLiAgain = document.createElement("li");
         const xAgain = document.createElement("i");
